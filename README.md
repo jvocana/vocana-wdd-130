@@ -1,4 +1,4 @@
-# vocana-wdd-130
-This is my final project site for WDD 130 at BYUI.
+# WDD 130 Final Project
+Owner: Jaxon Vocana
 
-redoing this through the command prompt.
+Semester: Winter 2021
