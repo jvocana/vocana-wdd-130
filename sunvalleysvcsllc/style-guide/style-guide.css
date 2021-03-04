@@ -1,15 +1,22 @@
 /* YOU WILL EDIT ALL THE COLORS BELOW */
 :root {
     /* Normal Colors */
-    --background-color: white;
-    --alt-background-color: rgb(15, 163, 221);
+    --background-color: rgb(242, 242, 242);
+    --alt-background-color: #03A64A;
     --primary-color: black;
-    --alt-primary-color: white;
+    --alt-primary-color: #F29D35;
     /* Dark Mode Colors */
     --dark-background-color: black;
     --dark-alt-background-color: rgb(22, 110, 26);
     --dark-primary-color: white;
-    --dark-alt-primary-color: rgb(199, 199, 199);
+    --dark-alt-primary-color: #F29D35;
+
+    /* logo colors
+    blue: #04C4D9
+    yellow: #F29D35
+    brown: #733702
+    green: #03A64A 
+    */
 }
 
 html, body {
@@ -28,7 +35,7 @@ body {
     font-size: 62.5%;
     padding: 2rem 1rem;
     text-align: center;
-    font-family: 'Sans-serif', sans-serif; /* EDIT */
+    font-family: 'Roboto', sans-serif; /* EDIT */
 }
 
 body h1 {
@@ -36,12 +43,12 @@ body h1 {
     font-size: 2.5rem;
     text-decoration: underline;
     text-align: center;
-    font-family: 'Calligraffitti', cursive; /* EDIT */
+    font-family: 'Roboto', sans-serif; /* EDIT */
 }
 
 body h2 {
     font-size: 1.75rem;
-    font-family: 'Calligraffitti', cursive; /* EDIT */
+    font-family: 'Roboto', sans-serif; /* EDIT */
 }
 
 body button {
@@ -51,7 +58,7 @@ body button {
     border: 1px solid var(--primary-color);
     background-color: var(--alt-background-color);
     cursor: pointer;
-    font-family: 'Cedarville Cursive', cursive; /* EDIT */
+    font-family: 'CedaRoboto', sans-serif; /* EDIT */
 }
 
 body button:hover {
