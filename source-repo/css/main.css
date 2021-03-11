@@ -18,8 +18,8 @@
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
     height: 100%;
     text-rendering: optimizeLegibility;
@@ -68,6 +68,8 @@ header {
     border-bottom: 1px solid var(--border-color);
     color: var(--alt-font-color);
     background-color: var(--alt-background-color);
+    
+    
 }
 
 header div#company-name {
@@ -76,33 +78,51 @@ header div#company-name {
     grid-row: 1;
     align-items: center;
     margin-left: auto;
+    
 }
 
 header div#logo-wrapper img {
     height: 78px;
     width: auto;
+    padding: 5px;
 }
 
 header a {
     color: var(--alt-font-color);
+    text-decoration: none;
+}
+
+header a:hover {
+    color:#04C4D9;
 }
 
 header nav {
     display: flex;
     align-items: center;
     margin-left: auto;
+   
 }
 
 header nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    
 }
 
 header nav ul li {
     display: inline-block;
     padding: 7.5px;
-    margin-right: 7.5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border: 0px solid;
+    border-right-width: 1px;
+    border-color: rgba(0,0,0,.05);
+    
+}
+
+header nav ul li#contact-us {
+    border-right-width: 0px;
 }
 
 main {
@@ -112,6 +132,101 @@ main {
     color: var(--font-color);
     background-color: var(--background-color);
 }
+
+/* index page css */
+body section {
+    padding: 5px;
+    text-align: center;
+}
+body section h1 a {
+    color: var(--alt-font-color);
+    text-decoration: none;
+}
+body section h1 a:hover {
+    color:#04C4D9;
+}
+/* banner image css */
+body section.bannerwrapper {
+    text-align: center;
+}
+body section.bannerwrapper img{
+    width: 80%;
+    border: 0px solid;
+    border-radius: 10px;
+}
+body em {
+    display:grid;
+    text-align: center;
+    font-size: 12px;
+}
+/* css for landscaping section */
+body section.landscaping div#landscaping {
+    text-align: left;
+    padding: 5px;
+}
+body section.landscaping div#landscaping h1 {
+    text-align: left;
+}
+body section.landscaping div#landscapeimg {
+    text-align: center;
+}
+body section.landscaping div#landscapeimg img {
+    width:auto;
+    height:400px;
+    border: 0px solid;
+    border-radius: 10px; 
+}
+
+/* css for lawn care section */
+body section.lawncare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body section.lawncare div#lawncare {
+    grid-column: 1;
+    text-align: left;
+    padding: 5px;
+}
+
+body section.lawncare div#lawncare h1 {
+    text-align: left;
+}
+body section.lawncare div#lawncareimg {
+    grid-column: 2;
+    text-align: center;
+}
+body section.lawncare div#lawncareimg img {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    border-radius: 10px;
+}
+/* css for lighting section */
+body section.lighting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+body section.lighting div#lighting {
+    grid-column: 2;
+    text-align: left;
+    padding: 5px;
+}
+body section.lighting div#lighting h1 {
+    text-align: left;
+}
+body section.lighting div#lightingimg {
+    grid-column: 1;
+    text-align: center;
+    
+    
+}
+body section.lighting div#lightingimg img {
+    width: 100%;
+    height: auto;
+    border: 0px solid;
+    border-radius: 10px;
+}
+/* end of index css */
 
 footer {
     display: grid;
