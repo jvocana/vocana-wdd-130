@@ -49,6 +49,11 @@ header div#company-name {
     margin-left: auto;
 }
 
+header div#logo-wrapper img {
+    height: 100px;
+    width: auto;
+}
+
 header a {
     color: var(--alt-font-color);
 }
