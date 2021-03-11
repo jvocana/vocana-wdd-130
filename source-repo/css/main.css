@@ -3,17 +3,18 @@
     --spacing: 15px;
     --font-size: 1.15rem;
     /* Normal Colors */
-    --background-color: white;
-    --alt-background-color: gainsboro;
+    --background-color: rgb(248, 248, 248);
+    --alt-background-color: white;
     --font-color: black;
-    --alt-font-color: darkslategray;
-    --border-color: black;
+    --alt-font-color: rgb(136, 136, 136);
+    --border-color: #04C4D9;
     /* Dark Mode Colors */
-    --dark-background-color: black;
-    --dark-alt-background-color: darkslategray;
+    --dark-background-color: rgb(59, 59, 59);
+    --dark-alt-background-color:black ;
     --dark-font-color: white;
     --dark-alt-font-color: gainsboro;
-    --dark-border-color: white;
+    --dark-border-color: #04C4D9;
+   
 }
 
 html, body {
@@ -28,6 +29,34 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body h1 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* EDIT */
+}
+
+body h2 {
+    font-size: 1.75rem;
+    font-family: 'Roboto', sans-serif; /* EDIT */
+}
+
+body button {
+    font-size: 1.15rem;
+    padding: 0.75rem 1.5rem;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--alt-background-color);
+    cursor: pointer;
+    font-family: 'CedaRoboto', sans-serif; /* EDIT */
+}
+
+body button:hover {
+    background-color: var(--background-color);
 }
 
 header {
@@ -50,7 +79,7 @@ header div#company-name {
 }
 
 header div#logo-wrapper img {
-    height: 100px;
+    height: 78px;
     width: auto;
 }
 
