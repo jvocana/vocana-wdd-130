@@ -37,12 +37,12 @@ body h1 {
     font-size: 2.5rem;
     text-decoration: none;
     text-align: center;
-    font-family: 'Roboto', sans-serif; /* EDIT */
+    font-family: 'Roboto', sans-serif; 
 }
 
 body h2 {
     font-size: 1.75rem;
-    font-family: 'Roboto', sans-serif; /* EDIT */
+    font-family: 'Roboto', sans-serif;
 }
 
 body button {
@@ -52,12 +52,13 @@ body button {
     border: 1px solid var(--primary-color);
     background-color: var(--alt-background-color);
     cursor: pointer;
-    font-family: 'CedaRoboto', sans-serif; /* EDIT */
+    font-family: 'CedaRoboto', sans-serif; 
 }
 
 body button:hover {
     background-color: var(--background-color);
 }
+
 
 header {
     display: grid;
@@ -95,6 +96,9 @@ header a {
 header a:hover {
     color:#04C4D9;
 }
+body.dark-mode header a:hover {
+    color:#04C4D9;
+}
 
 header nav {
     display: flex;
@@ -121,6 +125,16 @@ header nav ul li {
     
 }
 
+body.dark-mode header nav ul li {
+    display: inline-block;
+    padding: 7.5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    border: 0px solid;
+    border-right-width: 1px;
+    border-color: rgb(201, 201, 201);
+}
+
 header nav ul li#contact-us {
     border-right-width: 0px;
 }
@@ -137,6 +151,12 @@ main {
 body section {
     padding: 5px;
     text-align: center;
+    text-shadow: 2px 2px 4px #c0bfbf;
+}
+body.dark-mode section {
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 }
 body section h1 a {
     color: var(--alt-font-color);
@@ -153,16 +173,26 @@ body section.bannerwrapper img{
     width: 80%;
     border: 0px solid;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.356);
+    text-align: center;
 }
-body em {
+body em#serve {
     display:grid;
     text-align: center;
     font-size: 12px;
+}
+body a {
+    text-decoration: none;
+    color: var(--alt-font-color);
+}
+body a:hover {
+    color:#04C4D9;
 }
 /* css for landscaping section */
 body section.landscaping div#landscaping {
     text-align: left;
     padding: 5px;
+    
 }
 body section.landscaping div#landscaping h1 {
     text-align: left;
@@ -175,6 +205,8 @@ body section.landscaping div#landscapeimg img {
     height:400px;
     border: 0px solid;
     border-radius: 10px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.356);
+    text-align: center;
 }
 
 /* css for lawn care section */
@@ -200,6 +232,8 @@ body section.lawncare div#lawncareimg img {
     height: auto;
     border: 0px solid;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(102, 75, 75, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.356);
+    text-align: center;
 }
 /* css for lighting section */
 body section.lighting {
@@ -210,6 +244,7 @@ body section.lighting div#lighting {
     grid-column: 2;
     text-align: left;
     padding: 5px;
+    margin-left: 20px;
 }
 body section.lighting div#lighting h1 {
     text-align: left;
@@ -225,6 +260,20 @@ body section.lighting div#lightingimg img {
     height: auto;
     border: 0px solid;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.356);
+    text-align: center;
+}
+body div.family em {
+    display: grid;
+    text-align: center;
+}
+body section.family img {
+    width: 80%;
+    height: auto;
+    border: 0px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.356);
+    text-align: center;
 }
 /* end of index css */
 
@@ -375,11 +424,14 @@ body.dark-mode header {
 
 body.dark-mode header a {
     color: var(--dark-alt-font-color);
+    
 }
 
 body.dark-mode main {
     color: var(--dark-font-color);
     background-color: var(--dark-background-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.767), 0 6px 20px 0 rgba(0, 0, 0, 0.76);
+    text-align: center;
 }
 
 body.dark-mode footer {
