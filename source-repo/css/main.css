@@ -18,6 +18,8 @@
 }
 
 html, body {
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -30,6 +32,10 @@ body {
     flex-direction: column;
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+}
+
+body section {
+    flex: 1;
 }
 
 body h1 {
