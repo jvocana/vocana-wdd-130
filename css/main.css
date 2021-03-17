@@ -284,6 +284,29 @@ body section.family img {
 /* end of index css */
 
 /* css for about us page */
+section.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr
+ }
+
+section.history h1 {
+     text-align: left;
+     grid-column: 1;
+     grid-row: 1;
+ }
+
+ section.history p {
+     text-align: left;
+     grid-column: 1;
+     grid-row: 2;
+ }
+
+ section.history img {
+     grid-column: 2;
+     grid-row: 1/3;
+ }
+ 
 section.team section.card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
