@@ -351,7 +351,7 @@ section.team
      #employee1 img, #employee3 img {
         grid-column: 2;
         grid-row: 1;
-        
+        border-radius: 10px;
      }
      #employee1 p, #employee3 p {
          grid-column: 1/3;
@@ -372,7 +372,7 @@ section.team
        #employee2 img, #employee4 img {
           grid-column: 1;
           grid-row: 1;
-          
+          border-radius: 10px;
        }
        #employee2 p, #employee4 p {
            grid-column: 1/3;
