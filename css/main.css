@@ -301,12 +301,15 @@ section.history h1 {
      text-align: left;
      grid-column: 1;
      grid-row: 1;
+     padding: 5px;
  }
 
  section.history p {
      text-align: left;
      grid-column: 1;
      grid-row: 2;
+     font-size: 14px;
+     margin: 5px;
  }
 
  section.history img {
@@ -339,7 +342,7 @@ section.team
   section#employee1, section#employee3 {
       display: grid;
       grid-template-columns: 40% auto;
-      grid-template-rows: 1fr auto;
+      grid-template-rows: auto auto;
       
      }
      #employee1 div.card, #employee3 div.card {
@@ -352,6 +355,8 @@ section.team
         grid-column: 2;
         grid-row: 1;
         border-radius: 10px;
+        display: flex;
+        
      }
      #employee1 p, #employee3 p {
          grid-column: 1/3;
@@ -373,12 +378,14 @@ section.team
           grid-column: 1;
           grid-row: 1;
           border-radius: 10px;
+          
        }
        #employee2 p, #employee4 p {
            grid-column: 1/3;
            grid-row: 2;
            text-align: center;
        }
+
 /* end of for about us css */
 
 /* css for contact-us page */
@@ -404,7 +411,14 @@ section.container {
  section.image {
      grid-column: 1/3;
      grid-row: 2;
+     
  }
+
+ section.image img {
+     height: auto;
+     width: 80%;
+     border-radius: 10px; 
+}
 
 form {
     
