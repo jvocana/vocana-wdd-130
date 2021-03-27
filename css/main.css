@@ -435,6 +435,40 @@ section.container section.information p {
 }
 /* End of css for contact-us page*/
 
+/* start of faq css */
+section#questions {
+    text-align: left;
+}
+section img#faq {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* end of faq css */
+
+/* start of services css */
+section#services-content div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px;
+    text-align: left;
+
+}
+section#services-content div h2, p {
+    grid-column: 1;
+}
+section#services-content div img {
+    grid-column: 2;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+section#services-content div table {
+    grid-column: 2;
+    
+}
+/* end of services css */
+
 footer {
     display: grid;
     grid-template-rows: auto;
